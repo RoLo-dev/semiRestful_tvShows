@@ -1,0 +1,136 @@
+/* Universal styling */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #fff;
+    background-color: #1C232A;
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.wrapper{
+    width: 90%;
+    margin: 0 auto;
+}
+.main-content{
+    margin-top: 7rem;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+}
+.flex-col{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+h1{
+    margin-bottom: 3rem;
+    font-size: 2.85rem;
+}
+.show-info{
+    margin-bottom: 1rem;;
+}
+.bold{
+    font-weight: bold;
+}
+.outline-btn{
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 3px 15px;
+    border-radius: 5px;
+    transition: all 0.8s;
+    font-size: 0.8rem;
+}
+.outline-btn:hover{
+    background-color: #fff;
+    color: #1C232A;
+    transition: all 0.3s;
+}
+
+/* Body styling */
+input{
+    margin-bottom: 1.5rem;
+    border: 0;
+    border-bottom: 1px solid #fff;
+    padding: 0 0 5px 5px;
+    outline: 0;
+    transition: all 0.9s;
+}
+input:hover,
+.textarea:hover{
+    background-color: rgba(255, 255, 255, 0.045);
+    border-color: #00BFB3;
+    transition: all 0.3s;
+}
+input::placeholder,
+.textarea::placeholder{
+    font-size: 1rem;
+    color: #00BFB3;
+}
+.textarea::placeholder{
+    padding: 5px 0 0 5px;
+}
+.textarea{
+    outline: 0;
+    border: 1px solid #fff;
+    height: 150px;
+    margin-bottom: 1.5rem;
+    transition: all 0.9s;
+}
+.form-btn{
+    text-decoration: none;
+    border: 1px solid #00BFB3;
+    color: #00BFB3;
+    text-transform: uppercase;
+    padding: 5px 0;
+    text-align: center;
+    transition: all 0.9s;
+}
+.form-btn:hover{
+    background-color: #fff;
+    border-color: #fff;
+    color: #1C232A;
+    transition: all 0.3s;
+}
+.view-btn{
+    text-decoration: none;
+    border-bottom: 1px solid #00BFB3;
+    padding-bottom: 5px;
+    color: #00BFB3;
+    transition: all 0.9s;
+    text-align: center;
+    width: 25%;
+    margin: 2rem auto 0 auto;
+}
+.view-btn:hover{
+    border-color: #fff;
+    color: #fff;
+    transition: all 0.3s;
+}
+table{
+    width: 100%;
+    margin-bottom: 5rem;
+}
+table tr th:first-child{
+    padding-right: 1rem;
+}
+table tr th{
+    padding-right: 5rem;
+    padding-bottom: 1rem;
+}
+.bottom-section{
+    margin-top: 15rem;
+}
+.edit-delete{
+    display: inline-block;
+    color: #00BFB3;
+    margin-top: 1rem;
+    transition: all 0.9s;
+}
+.edit-delete:hover{
+    color: #fff;
+    transition: all 0.3s;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TV Shows | Edit Shows</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="main-content flex">
+
+            <div class="col-1">
+                <h1>Edit New Show</h1>
+
+                <form action="/shows/{{selected_show.id}}/update" class="flex-col" method="POST">
+                    {% csrf_token%}
+                    <input type="text" name="title" value="{{ selected_show.title }}">
+                    <input type="text" name="network" value="{{ selected_show.network }}">
+                    <input type="date" name="release_date" value="{{ selected_show.release_date }}">
+                    <textarea name="desc" class="textarea" value="{{ selected_show.desc }}"></textarea>
+                    <input type="submit" class="form-btn bold" value="Update">
+                </form>
+                <a href="/shows/{{selected_show.id}}" class="view-btn">Go to Show</a>
+
+            </div>
+            <div class="col-2">
+                <a href="/shows" class="outline-btn">Go back</a>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
